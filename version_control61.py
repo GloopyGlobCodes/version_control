@@ -41,7 +41,7 @@ def main():
         if choice == 1:
             encoded_password = encode() # stores encoded password as variable
         elif choice == 2:
-            pass
+            decoded_password = decode()
         elif choice == 3:
             break
 
