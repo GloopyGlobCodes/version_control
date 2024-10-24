@@ -24,6 +24,16 @@ def encode():
     print('')  # instructions pdf shows double space between confirmation output and menu
     return encoded_password
 
+def decode():
+  password = encoded_password
+  decodedPass = '' # initialized string answer
+  for i in password: # indexing through string
+    oldDigit = (int(i)-3) % 10 #reverting encoding process
+    decodedPass += str(oldDigit) # adding decoded digit to the string answer
+  print("The encoded password is", password, "and the original password is", decodedPass)
+  print('')
+  return decoded_password
+
 
 def main():
     while True:
