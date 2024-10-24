@@ -24,7 +24,7 @@ def encode():
     print('')  # instructions pdf shows double space between confirmation output and menu
     return encoded_password
 
-def decode():
+def decode(encoded_password):
   password = encoded_password
   decodedPass = '' # initialized string answer
   for i in password: # indexing through string
