@@ -32,7 +32,7 @@ def decode(encoded_password):
     decodedPass += str(oldDigit) # adding decoded digit to the string answer
   print("The encoded password is", password, "and the original password is", decodedPass)
   print('')
-  return decoded_password
+  return decodedPass
 
 
 def main():
@@ -41,7 +41,7 @@ def main():
         if choice == 1:
             encoded_password = encode() # stores encoded password as variable
         elif choice == 2:
-            decoded_password = decode()
+            decode(encoded_password)
         elif choice == 3:
             break
 
